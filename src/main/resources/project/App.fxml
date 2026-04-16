@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.ProjectController">
+   <children>
+      <ImageView fx:id="goalImage" fitHeight="600.0" fitWidth="900.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="keeperImage" fitHeight="150.0" fitWidth="150.0" layoutX="375.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="statusLabel" layoutX="390.0" layoutY="25.0" style="-fx-text-fill: white; -fx-font-size: 20px;" text="Klar til å skyte!" />
+      <Label fx:id="scoreLabel" layoutX="430.0" layoutY="75.0" style="-fx-text-fill: white; -fx-font-size: 20px;" text="0 / 0" />
+      <Button fx:id="btnUL" layoutX="560.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleUL" prefHeight="40.0" prefWidth="140.0" text="Øvre venstre" />
+      <Button fx:id="btnUR" layoutX="720.0" layoutY="460.0" mnemonicParsing="false" onAction="#handleUR" prefHeight="40.0" prefWidth="140.0" text="Øvre høyre" />
+      <Button fx:id="btnDL" layoutX="560.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleDL" prefHeight="40.0" prefWidth="140.0" text="Nedre venstre" />
+      <Button fx:id="btnDR" layoutX="720.0" layoutY="520.0" mnemonicParsing="false" onAction="#handleDR" prefHeight="40.0" prefWidth="140.0" text="Nedre høyre" />
+      <Button layoutX="790.0" layoutY="25.0" mnemonicParsing="false" onAction="#handleReset" text="Restart" />
+      <ImageView fx:id="ballImage" fitHeight="40.0" fitWidth="40.0" layoutX="430.0" layoutY="510.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="794.0" layoutY="69.0" mnemonicParsing="false" onAction="#handleSave" text="Lagre" />
+      <Button layoutX="788.0" layoutY="115.0" mnemonicParsing="false" onAction="#handleLoad" text="Last inn" />
+      <Label fx:id="bestScoreLabel" layoutX="416.0" layoutY="107.0" text="Best score: 0" />
+      <TextField fx:id="nameField" layoutX="30.0" layoutY="20.0" prefWidth="150.0" promptText="Spillernavn" />
+      <TextArea fx:id="leaderboardArea" editable="false" layoutX="20.0" layoutY="70.0" prefHeight="180.0" prefWidth="180.0" />
+   </children>
+</AnchorPane>
